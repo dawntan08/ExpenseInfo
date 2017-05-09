@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.liway.expenseinfo.MainActivity"
+    android:orientation="vertical"
     android:padding="16dp"
-    android:orientation="vertical">
+    tools:context="com.liway.expenseinfo.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,27 +14,12 @@
 
         <TextView
             style="@style/TextView"
-            android:text="Amount"/>
+            android:text="Date" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            style="@style/TextView"
-            android:text="S.I. #" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="date" />
 
     </LinearLayout>
 
@@ -44,12 +29,12 @@
 
         <TextView
             style="@style/TextView"
-            android:text="TIN #"/>
+            android:text="Particular" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="textCapWords"/>
 
     </LinearLayout>
 
@@ -58,15 +43,61 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Date"
-            style="@style/TextView"/>
+            style="@style/TextView"
+            android:text="Company" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:inputType="textCapWords"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView"
+            android:text="SI number" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView"
+            android:text="TIN" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView"
+            android:text="Amount" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,14 +105,14 @@
         android:layout_marginTop="16dp">
 
         <TextView
-            android:text="Category"
-            style="@style/TextView"/>
+            style="@style/TextView"
+            android:text="Category" />
 
         <Spinner
             android:id="@+id/expense_category_spinner"
-            android:entries="@array/expense_category"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:entries="@array/expense_category">
 
         </Spinner>
 

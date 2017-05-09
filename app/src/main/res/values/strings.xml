@@ -2,10 +2,12 @@
     <string name="app_name">Expense Tracker</string>
 
     <string-array name="expense_category">
+        <item>Wage</item>
+        <item>Professional Fee</item>
+        <item>Utility</item>
+        <item>Store Supply</item>
         <item>Transportation</item>
-        <item>Gas/Oil</item>
-        <item>Salaries and Wages</item>
-        <item>Meal allowance</item>
+        <item>Meal Allowance</item>
     </string-array>
 
 </resources>
