@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+
+    <string-array name="expense_category">
+        <item>Transportation</item>
+        <item>Gas/Oil</item>
+        <item>Salaries and Wages</item>
+        <item>Meal allowance</item>
+    </string-array>
+
+</resources>
